@@ -3,6 +3,7 @@ import { Controller, useForm } from 'react-hook-form'
 import { isValidEmail } from '../../utils/validation';
 import { CreateUser } from '../../services/backend';
 import {TypedUseSelectorHook, useDispatch, useSelector} from 'react-redux';
+import { userRegLogState } from '../../redux/userSlice';
 export default function 
 () {
 
@@ -23,7 +24,7 @@ const onSubmit = async (data: any) => {
     try {
       await CreateUser({name: data.name, email: data.email, password:data.password,phone: data.phone, image: data.image});
      // dispatch(loadingUpdate(false));
-      //dispatch(userRegLogState({value: 1, phone: data.phone}));
+      dispatch(userRegLogState({value: 1, phone: data.phone}));
     } catch (err: any) {
       //dispatch(loadingUpdate(false));
       let msg = 'Not able to signup.';
@@ -128,7 +129,7 @@ const onSubmit = async (data: any) => {
                     onChange={onChange}
                     value={value}
                     onBlur={onBlur}
-                    maxLength={10}
+                    
                     type="text" className="form-control" id="image" name='image' placeholder="image link.."
                     />
                 )}

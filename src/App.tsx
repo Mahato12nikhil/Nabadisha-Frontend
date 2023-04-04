@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './components/pages/navbar';
 import LoginForm from './components/login/loginForm'
 import RegistrationForm from './components/login/registrationForm';
+import Home from './components/Home/home';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
               
                   <Routes>
                     <Route path="/login"  element={<LoginForm />} />
+                    <Route path="/home"  element={<Home />} />
                     <Route path="/sign_up"  element={<RegistrationForm />} />
                   </Routes>
         

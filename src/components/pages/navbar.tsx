@@ -21,9 +21,9 @@ export default function
             </div>
             
             <div className="nav-links">
-                <Link to="//github.io/jo_geek" >Home</Link>
+                <Link to="/home" >Home</Link>
                 <Link to="http://stackoverflow.com/users/4084003/">About</Link>
-                <Link to="https://in.linkedin.com/in/jonesvinothjoseph" >Gallery</Link>
+                <Link to="/gallery" >Gallery</Link>
                 <Link to="/login" >login </Link>
                 <Link to="/sign_up">Signup</Link>
             </div>

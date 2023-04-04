@@ -12,7 +12,7 @@ const initialState: userState = {
     error: undefined,
     userDetail: undefined,
   };
-
+//Log state=0, not logged In, 1 means logged in
 const UserSlice = createSlice({
     name: 'userState',
     initialState,

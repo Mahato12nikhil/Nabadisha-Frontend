@@ -14,3 +14,7 @@
     image: string;
     password:string
   }
+  export interface UserLoginPayload {
+    email: string;
+    password:string
+  }
