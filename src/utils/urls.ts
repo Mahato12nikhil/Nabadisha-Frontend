@@ -9,6 +9,6 @@ export const urls={
     //club data
     fetch_about:'about',
     fetch_gallery:'gallery',
-    members:'members',
+    fetchMembers:'members',
     activity:'activity'
 };

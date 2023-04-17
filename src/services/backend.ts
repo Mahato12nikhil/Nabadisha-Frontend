@@ -15,3 +15,6 @@ export const CreateUser = (payload: UserCreatePayload) => {
   export const fetchGallery = () => {
     return getClient().get(urls.fetch_gallery);
   };
+  export const fetchMembers = () => {
+    return getClient().get(urls.fetchMembers);
+  };
